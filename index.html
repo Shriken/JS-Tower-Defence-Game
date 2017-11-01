@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Tower Defence</title>
+  <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+  <script src="java.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="custom.css" />
+  <link href="https://fonts.googleapis.com/css?family=Francois+One" rel="stylesheet">
+</head>
+
+<body>
+  <img class='imgbg' src='images/pixel.jpg'></img>
+  <div class='introwrapper'>
+    <div class='intro'>
+      <h1 id="startBtn">Start</h1>
+    </div>
+  </div>
+  <div class='gameWrap'>
+    <div class='canvasWrap'>
+      <canvas id="gameCanvas"></canvas>
+    </div>
+    <div class='hatchup'></div>
+    <div class='hatchdown'></div>
+    <div class='decorleft'>
+      <span id='towersMenuToggle'>Towers Shop</span>
+    </div>
+    <div class='decorright shadow8'>
+      <p>
+        <span class="glyphicon glyphicon-usd" style="color:rgb(226, 198, 35);"></span>
+        <span id='cash'></span>
+      </p>
+      <p>
+        <span class="glyphicon glyphicon-heart" style="color:rgb(206, 29, 29);"></span>
+        <span id='lives'></span>
+      </p>
+      </br>
+      <span id='nextWaveBtn'>Ready</span>
+    </div>
+  </div>
+  <div class="row pop-up">
+    <div class="box small-6 large-centered">
+      <a href="#" class="close-button">&#10006;</a>
+      <h3>Available Towers</h3>
+      <p>Click on the tower to add it to the field. </p>
+      <div class='towerDiv'> <!-- Tower plus price-->
+        <div class='cannonDisp'>
+            <img id='acannonbg' src='images/cannonbg.png' class='towerBGDisplay'></img>
+            <img id='acannon' src='images/cannon.png' class='towerDisplay'></img>
+        </div>
+        </br>
+        <span class="glyphicon glyphicon-usd" style="color:rgb(226, 198, 35);"></span>
+        <span class='priceTag'>400</span>
+      </div>
+    </div>
+  </div>
+  <div class='pathInd tower' style='height:273px; width:80px; left:95px; top:0px;'></div>
+  <div class='pathInd tower' style='height:80px; width:280px; left:95px; top:195px; '></div>
+  <div class='pathInd tower' style='height:180px; width:80px; left:295px; top:195px;'></div>
+  <div class='pathInd tower' style='height:80px; width:310px; left:295px; top:295px;'></div>
+  <div class='pathInd tower' style='height:270px; width:80px; left:525px; top:95px;'></div>
+  <div class='pathInd tower' style='height:80px; width:400px; left:525px; top:95px;'></div>
+  <div class='pathInd tower' style='height:460px; width:80px; left:845px; top:95px;'></div>
+  <div class='pathInd tower' style='height:80px; width:230px; left:845px; top:475px;'></div>
+  <div class='pathInd tower' style='height:350px; width:80px; left:995px; top:205px;'></div>
+  <div class='pathInd tower' style='height:80px; width:230px; left:995px; top:205px;'></div>
+  <div class='pathInd tower' style='height:430px; width:80px; left:1145px; top:205px;'></div>
+</body>
+
+</html>
