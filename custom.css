@@ -103,7 +103,7 @@ body {
     z-index: 2;
 }
 .intro h1:hover{
-    color: red;
+    color: purple;
     cursor: pointer;
 }
 .towersMenu{
